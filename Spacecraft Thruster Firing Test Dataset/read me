@@ -1,0 +1,18 @@
+Context
+
+Testing hardware to qualify it for Spaceflight is critical to model, and verify performances. Hot fire tests (also known as life-tests) are typically run during the qualification campaigns of satellite thrusters, but results remains proprietary data. This synthetic dataset was generated based on real-world physics of monopropellant chemical thruster, to foster the development and benchmarking of transient, and steady-state modelling.
+
+Content
+
+Each file is a time series of 1-hour long fire test run for a specific inlet propellant pressure (between 8 and 24 bar).
+The thruster is operated with a single ON-OFF command. The status of the command is provided in the ton column.
+The thrust and mfr columns are respectively the measured thrust (in Newtons) and measured mass flow rate (in mg/s) recorded at 100 Hz frequency.
+
+The file format provides the following information: for example "SN01 _ 10 _1 7.csv":
+
+the thruster fired is SN01 (all fire tests were performed on the same thruster "SN01" (for serial number 01)).
+the firing sequence was run with an inlet pressure of 10 bar.
+the single test ID (chronological) is 17.
+Evolutions
+
+Future versions on the dataset may include tests run on different serial numbers, from which you will be able to assess the thruster-to-thruster reproducibility.
